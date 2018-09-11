@@ -72,14 +72,15 @@ and password for your WinSMS profile:
 Once the object is created you can start adding messages using the Messages method of the send class:
 
 ```python
+send.Message('Some message you want to send')
 ```
 
-After adding a message you can start adding numbers using the AddNumbers method. Note that a message must be present otherwise you cannot add numbers.
+After adding a message you can start adding numbers using the AddNumbers method, you can add multiple numbers separated by commas. Note that a message must be present otherwise you cannot add numbers.
 
 NOTE: Please make sure to add the numbers with the country code(without + simbol) otherwise WinSMS will automatically use the South-African code (27)
 
 ```python
-
+send.AddNumbers('some number 1','some number 2')
 ```
 
 You can add more messages by simply calling the Message method again. It will automatically add your previous message with its numbers to the XML that will sent to the WinSMS gateway.
