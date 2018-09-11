@@ -2,14 +2,14 @@
 *********
 #### Description
 
-The module allows you to interact with the [WinSMS XML API](). The API allows you to do the following:
+The module allows you to interact with the [WinSMS XML API](https://www.winsms.co.za/). The API allows you to do the following:
 
 * Send SMS's in bulk at a specific time (scheduled) or immediately
 * Delete scheduled SMS's
 * Get replies
 * Get status of SMS messages.
 
-Note: You will need an account with [WinSMS]() to send SMS's through the gateway. Sign up and add credits to start.
+Note: You will need an account with [WinSMS](https://www.winsms.co.za/registration/) to send SMS's through the gateway. Sign up and add credits to start.
       The same login details you use to sign in is used by the module to communicate with the API.
 
 Please feel free to use this code as is on your applications or adjust it according to your needs.
@@ -33,7 +33,7 @@ This module or application was not developed by or for WinSMS, and was purely do
 You can clone the module via github or use git:
 
 ```shell
-git clone
+git clone https://github.com/clombo/WinSMS.git
 ```
 
 Once clone make sure to install the necessary dependencies from the requirements.txt file:
@@ -75,6 +75,8 @@ Once the object is created you can start adding messages using the Messages meth
 ```
 
 After adding a message you can start adding numbers using the AddNumbers method. Note that a message must be present otherwise you cannot add numbers.
+
+NOTE: Please make sure to add the numbers with the country code(without + simbol) otherwise WinSMS will automatically use the South-African code (27)
 
 ```python
 
