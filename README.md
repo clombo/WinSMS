@@ -56,10 +56,6 @@ from WinSMS.sms import send,delete,replies,batchStatus
 ```
 
 
-##### Getting help
-
-```python
-```
 ##### Send SMS's
 
 The send import is used to send SMS's once imported, create a "send" object passing your username
